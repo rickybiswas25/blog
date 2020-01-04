@@ -1,10 +1,11 @@
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import yearconverter.FullYearConverter;
 import yearconverter.JavaTimeConverter;
 import yearconverter.JodaTimeConverter;
 
-import static org.junit.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 /**
  * Created by Deb (debmalya.biswas25@gmail.com)
@@ -13,7 +14,7 @@ public class YearConverterTest {
     private FullYearConverter jodaTimeConverter;
     private FullYearConverter javaTimeConverter;
 
-    @Before
+    @BeforeEach
     public void init() {
         jodaTimeConverter = new JodaTimeConverter();
         javaTimeConverter = new JavaTimeConverter();
@@ -21,12 +22,13 @@ public class YearConverterTest {
 
     @Test
     public void testJodaTimeConverter() {
-        assertEquals(1999, jodaTimeConverter.convert("99"));
+        assertThat(jodaTimeConverter.convert("99"))
+                .isEqualTo(1999);
     }
 
     @Test
     public void testJavaTimeConverter() {
-        assertEquals(1999, javaTimeConverter.convert("99"));
+        assertThat(javaTimeConverter.convert("99"))
+                .isEqualTo(1999);
     }
-
 }

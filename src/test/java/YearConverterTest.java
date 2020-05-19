@@ -1,8 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import yearconverter.FullYearConverter;
-import yearconverter.JavaTimeConverter;
-import yearconverter.JodaTimeConverter;
+import yearsystem.FullYearConverter;
+import yearsystem.JavaTimeConverter;
+import yearsystem.JodaTimeConverter;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

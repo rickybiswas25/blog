@@ -1,11 +1,10 @@
-import epochconverter.EConverter;
+import epochsystem.EConverter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by Deb (debmalya.biswas25@gmail.com)

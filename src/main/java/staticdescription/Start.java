@@ -1,4 +1,4 @@
-package staticdescriptopn;
+package staticdescription;
 
 public class Start {
 
